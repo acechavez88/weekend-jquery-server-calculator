@@ -1,14 +1,13 @@
-$(document).on (onReady){
-    console.log('Im ready');
+$(handleReady)
 
-$(.operatorBtn).on('click', () =>{
-})
+function handleReady() {
+  console.log("jquery is a GO!")
 
+// Get value on button click and show alert
+$(".operatorBtn").on('click', () =>{
+});
 }
 
-packet: {
-    number:"",
-    number2:"",
-    operator:"", 
-    answer:","
-}
+//   // Get value on button click and show alert
+//   $("#myBtn").on('click', submitAnswer){
+// }
