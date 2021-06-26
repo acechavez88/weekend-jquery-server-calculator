@@ -30,3 +30,7 @@ let calculationObj: {
     operator: operator, 
     answer: answer,
 }
+
+//store object to answerHistoryArray
+answerHistoryArray.push(calculationObj);
+res.send(calculationObj);
