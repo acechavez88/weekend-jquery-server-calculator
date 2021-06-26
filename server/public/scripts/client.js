@@ -43,3 +43,10 @@ function doMath(val1, val2) {
     console.log('Sorry something unexpected happened.', response);
   });
 }
+
+let answers = {};
+function submitAnswer() {
+  answers = {
+    val1: $('#firstInput').val(),
+  }
+}
