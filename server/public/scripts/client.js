@@ -8,6 +8,10 @@ $(".operatorBtn").on('click', () =>{
 });
 }
 
-//   // Get value on button click and show alert
-//   $("#myBtn").on('click', submitAnswer){
-// }
+function getAnswerHistory() {
+  //calls previous calculations..
+  $.ajax({
+    type: "GET",
+    url: '/answerHistory'
+  }) 
+}
