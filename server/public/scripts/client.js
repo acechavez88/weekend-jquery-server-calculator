@@ -27,12 +27,13 @@ function showAnswerHistory(previousCalculations) {
   $('#lastCalculation').append(previousCalculations[0])
 }
 
-function doMath(val1, val2) {
+function doMath(valOne, valTwo) {
   $.ajax({
     type: 'POST',
     url: '/Math',
     data: {
-
+        valOne: answers.valueOne,
+        valTwo: answers.valueTwo,
     },
     dataType: 'json'
   })
@@ -47,7 +48,7 @@ function doMath(val1, val2) {
 let answers = {};
 function submitAnswer() {
   answers = {
-    val1: $('#firstInput').val(),
-    val2: $('#secondInput').val(),
+    valueOne: $('#firstInput').val(),
+    valueTwo: $('#secondInput').val(),
   }
 }
