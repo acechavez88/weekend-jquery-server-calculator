@@ -12,6 +12,9 @@ app.use(express.static('server/public'));
 
 // GET & POST routes go here
 // does math calculation function go here?
+
+let answerHistoryArray = [];
+
 app.listen(PORT, () => {
     console.log('Server is running on port', PORT);
 });
