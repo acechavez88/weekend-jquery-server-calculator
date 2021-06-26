@@ -17,4 +17,7 @@ function getAnswerHistory() {
   .then(function (response) {
       showHistory(response);
   })
+  .catch(function (response) {
+      console.log('Sorry something unexpected happened.', response);
+  })
 }
