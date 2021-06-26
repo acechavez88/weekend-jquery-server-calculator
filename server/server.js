@@ -21,7 +21,7 @@ app.listen(PORT, () => {
 
 // create variable for previous answers and history
 app.get('/answerHistory', (req, res) => {
-    let previousCalculationHistory = answerHistoryArray;
+    res.send(answerHistoryArray);
 })
 // creating an object of input for GET
 let calculationObj = {
