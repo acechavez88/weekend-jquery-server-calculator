@@ -24,7 +24,7 @@ app.get('/answerHistory', (req, res) => {
     let previousCalculationHistory = answerHistoryArray;
 })
 // creating an object of input for GET
-let calculationObj: {
+let calculationObj = {
     number: number,
     number2: numberTwo,
     operator: operator, 
