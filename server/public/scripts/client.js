@@ -39,4 +39,7 @@ function doMath(val1, val2) {
   .then(function (response) {
     getAnswerHistory(response);
   })
+  .catch(function (response) {
+    console.log('Sorry something unexpected happened.', response);
+  });
 }
