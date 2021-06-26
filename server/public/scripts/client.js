@@ -26,3 +26,7 @@ function getAnswerHistory() {
 function showAnswerHistory(previousCalculations) {
   $('#lastCalculation').append(previousCalculations[0])
 }
+
+function doMath(val1, val2) {
+  
+}
