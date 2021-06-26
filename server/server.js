@@ -19,10 +19,14 @@ app.listen(PORT, () => {
     console.log('Server is running on port', PORT);
 });
 
+// create variable for previous answers and history
+app.get('/answerHistory', (req, res) => {
+    let previousCalculationHistory = answerHistoryArray;
+})
 // creating an object of input for GET
-packet: {
-    number:"",
-    number2:"",
-    operator:"", 
-    answer:","
+let calculationObj: {
+    number: number,
+    number2: numberTwo,
+    operator: operator, 
+    answer: answer,
 }
