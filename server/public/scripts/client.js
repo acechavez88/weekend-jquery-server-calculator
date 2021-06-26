@@ -48,5 +48,6 @@ let answers = {};
 function submitAnswer() {
   answers = {
     val1: $('#firstInput').val(),
+    val2: $('#secondInput').val(),
   }
 }
