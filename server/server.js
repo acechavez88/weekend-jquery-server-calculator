@@ -10,6 +10,11 @@ app.use(express.json());
 //serve up static files(HTML, CSS, Client JS)
 app.use(express.static('server/public'));
 
+// GET & POST routes go here
+
+app.listen(PORT, () => {
+    console.log('Server is running on port', PORT);
+});
 
 // creating an object of input for GET
 packet: {
