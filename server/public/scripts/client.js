@@ -54,5 +54,6 @@ function submitAnswer() {
   //clear input fields
 $('#firstInput').val('');
 $('#secondInput').val('');
+doMath();
 }
 
