@@ -14,4 +14,7 @@ function getAnswerHistory() {
     type: "GET",
     url: '/answerHistory'
   }) 
+  .then(function (response) {
+      showHistory(response);
+  })
 }
