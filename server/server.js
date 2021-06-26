@@ -7,6 +7,10 @@ const PORT = 5000;
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
+//serve up static files(HTML, CSS, Client JS)
+app.use(express.static('server/public'));
+
+
 // creating an object of input for GET
 packet: {
     number:"",
