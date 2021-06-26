@@ -21,3 +21,8 @@ function getAnswerHistory() {
       console.log('Sorry something unexpected happened.', response);
   })
 }
+
+//update answer history section
+function showAnswerHistory(previousCalculations) {
+  $('#lastCalculation').append(previousCalculations[0])
+}
