@@ -28,5 +28,15 @@ function showAnswerHistory(previousCalculations) {
 }
 
 function doMath(val1, val2) {
-  
+  $.ajax({
+    type: 'POST',
+    url: '/Math',
+    data: {
+
+    },
+    dataType: 'json'
+  })
+  .then(function (response) {
+    getAnswerHistory(response);
+  })
 }
