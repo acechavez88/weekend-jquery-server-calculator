@@ -51,4 +51,8 @@ function submitAnswer() {
     valueOne: $('#firstInput').val(),
     valueTwo: $('#secondInput').val(),
   }
+  //clear input fields
+$('#firstInput').val('');
+$('#secondInput').val('');
 }
+
