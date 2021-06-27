@@ -25,6 +25,9 @@ app.post('/Math', req, res) => {
             result = Number(firstNumber) - Number(secondNumber);
         case '*':
             result = Number(firstNumber) * Number(secondNumber);
+        case '/':
+            result = Number(firstNumber) / Number(secondNumber);
+            break;
             }
 
 }
