@@ -9,8 +9,8 @@ $("#submitButton").on('click', doMath);
 $("#clearButton").on('click', clearInputs);{
   }
 $('.operatorButton').on('click', function() {
-  operator = ${this}.html();
-}
+  operator = $(this).html();
+});
 
 function getAnswerHistory() {
   //calls previous calculations..
