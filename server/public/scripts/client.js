@@ -50,12 +50,17 @@ function doMath(valOne, valTwo) {
 
 let answers = {};
 function submitAnswer() {
-  answers = {
-    valueOne: $('#firstInput').val(),
-    valueTwo: $('#secondInput').val(),
+    let firstNumber = $('#firstInput').val();
+    let secondNumber = $('#secondInput').val(),
+    let calculationObj = {
+      number: number,
+      number2: numberTwo,
+      operator: operator,
+    }
   }
 }
 function clearInputs() {
   $('#firstInput').val('');
   $('#secondInput').val('');
 }
+
