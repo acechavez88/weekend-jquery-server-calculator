@@ -56,19 +56,18 @@ let answers = {};
 function submitAnswer() {
     let firstNumber = $('#firstInput').val();
     let secondNumber = $('#secondInput').val();
+    let operator = operator.$(this)
     let calculationObj = {
       number: number,
       number2: numberTwo,
       operator: operator
     }
-
-    //if any filed is empty alert
-  if(firstNumber === '' || secondNumber === '' || operator === '') {
-    alert('please complete fields');
-    return;
-  }
-
+//if any filed is empty alert
+if(firstNumber === '' || secondNumber === '' || operator === '') {
+  alert('please complete fields');
 }
+}
+
 // clearing inputs with C button..
 function clearInputs() {
   $('#firstInput').val('');
