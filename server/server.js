@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static('server/public'));
 
 // GET & POST routes go here
-// does math calculation function go here?
+// attempting to create POST route for math equation
 
 let answerHistoryArray = [];
 
@@ -23,7 +23,7 @@ app.listen(PORT, () => {
 app.get('/answerHistory', (req, res) => {
     res.send(answerHistoryArray);
 })
-// creating an object of input for GET
+//creating an object of input for GET
 let calculationObj = {
     number: number,
     number2: numberTwo,
