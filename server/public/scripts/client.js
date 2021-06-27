@@ -6,10 +6,9 @@ function handleReady() {
 // Get value on button click and show alert
 $(".operatorButton").on('click', () =>{
 });
-}
 // listener for clear inputs on click c button
 $("#clearButton").on('click', clearInputs);{
-  console.log('cleared inputs');
+  }
 }
 
 function getAnswerHistory() {
