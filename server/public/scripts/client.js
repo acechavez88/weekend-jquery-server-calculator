@@ -4,11 +4,11 @@ function handleReady() {
   console.log("jquery is a GO!")
 
 // Get value on button click and show alert
-$(".operatorButton").on('click', () =>{
-});
+$(".operatorButton").on('click', doMath);
 // listener for clear inputs on click c button
 $("#clearButton").on('click', clearInputs);{
   }
+$()
 }
 
 function getAnswerHistory() {
@@ -30,6 +30,7 @@ function showAnswerHistory(previousCalculations) {
   $('#lastCalculation').append(previousCalculations[0])
 }
 
+//create post route for calculation for two i
 function doMath(valOne, valTwo) {
   $.ajax({
     type: 'POST',
@@ -58,7 +59,7 @@ function submitAnswer() {
       operator: operator
     }
   }
-  
+// clearing inputs with C button..
 function clearInputs() {
   $('#firstInput').val('');
   $('#secondInput').val('');
