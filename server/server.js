@@ -21,7 +21,9 @@ app.post('/Math', req, res) => {
         case '+':
             result = Number(firstNumber) + Number(secondNumber);
             break;
-    }
+        case '-':
+            result = Number(firstNumber) - Number(secondNumber);
+            }
 
 }
 
