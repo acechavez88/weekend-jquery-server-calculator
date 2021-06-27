@@ -8,7 +8,8 @@ $("#submitButton").on('click', doMath);
 // listener for clear inputs on click c button
 $("#clearButton").on('click', clearInputs);{
   }
-$()
+$('.operatorButton').on('click', function() {
+  operator = ${this}.html();
 }
 
 function getAnswerHistory() {
