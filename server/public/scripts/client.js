@@ -51,11 +51,11 @@ function doMath(valOne, valTwo) {
 let answers = {};
 function submitAnswer() {
     let firstNumber = $('#firstInput').val();
-    let secondNumber = $('#secondInput').val(),
+    let secondNumber = $('#secondInput').val();
     let calculationObj = {
       number: number,
       number2: numberTwo,
-      operator: operator,
+      operator: operator
     }
   }
 }
