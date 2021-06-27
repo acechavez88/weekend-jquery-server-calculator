@@ -4,7 +4,7 @@ function handleReady() {
   console.log("jquery is a GO!")
 
 // Get value on button click and show alert
-$(".operatorButton").on('click', doMath);
+$(".submitButton").on('click', doMath);
 // listener for clear inputs on click c button
 $("#clearButton").on('click', clearInputs);{
   }
@@ -64,4 +64,3 @@ function clearInputs() {
   $('#firstInput').val('');
   $('#secondInput').val('');
 }
-
