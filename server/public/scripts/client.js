@@ -6,7 +6,12 @@ function handleReady() {
 // Get value on button click and show alert
 $(".operatorBtn").on('click', () =>{
 });
+
+$(".clearButton").on('click', clearInputs) {
+  console.log('cleared inputs');
 }
+}
+
 
 function getAnswerHistory() {
   //calls previous calculations..
