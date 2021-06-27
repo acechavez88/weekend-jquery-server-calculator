@@ -4,14 +4,13 @@ function handleReady() {
   console.log("jquery is a GO!")
 
 // Get value on button click and show alert
-$(".operatorBtn").on('click', () =>{
+$(".operatorButton").on('click', () =>{
 });
-
-$(".clearButton").on('click', clearInputs) {
+}
+// listener for clear inputs on click c button
+$("#clearButton").on('click', clearInputs);{
   console.log('cleared inputs');
 }
-}
-
 
 function getAnswerHistory() {
   //calls previous calculations..
