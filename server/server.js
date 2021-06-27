@@ -19,16 +19,16 @@ app.post('/Math', req, res) => {
     //using switch statement for operators
     switch(operator) {
         case '+':
-            result = Number(firstNumber) + Number(secondNumber);
+            result = Number(number) + Number(number2);
             break;
         case '-':
-            result = Number(firstNumber) - Number(secondNumber);
+            result = Number(number) - Number(number2);
             break;
         case '*':
-            result = Number(firstNumber) * Number(secondNumber);
+            result = Number(number) * Number(number2);
             break;
         case '/':
-            result = Number(firstNumber) / Number(secondNumber);
+            result = Number(number) / Number(number2);
             break;
             }
 
