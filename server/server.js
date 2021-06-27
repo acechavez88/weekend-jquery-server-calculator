@@ -16,6 +16,12 @@ app.post('/Math', req, res) => {
     let firstNumber = req.body.firstNumber;
     let secondNumber = req.body.secondNumber;
     let operator = req.body.operator;
+    //using switch statement for operators
+    switch(operator) {
+        case '+':
+            result = Number(firstNumber) + Number(secondNumber);
+            break;
+    }
 
 }
 
