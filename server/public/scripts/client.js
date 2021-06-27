@@ -8,6 +8,8 @@ $("#submitButton").on('click', doMath);
 // listener for clear inputs on click c button
 $("#clearButton").on('click', clearInputs);{
   }
+}
+//listener for operator button, function to take operator elements using HTML to get value..
 $('.operatorButton').on('click', function() {
   operator = $(this).html();
 });
