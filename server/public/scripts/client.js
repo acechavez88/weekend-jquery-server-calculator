@@ -58,7 +58,7 @@ function submitAnswer() {
       operator: operator
     }
   }
-}
+  
 function clearInputs() {
   $('#firstInput').val('');
   $('#secondInput').val('');
