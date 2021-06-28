@@ -38,7 +38,11 @@ app.post('/Math', (req, res) => {
         number2: numberTwo,
         operator: operator, 
         answer: answer,
-}
+    }
+
+    //store object to answerHistoryArray
+        answerHistoryArray.push(calculationObj);
+        res.send(calculationObj);
 
 });
 
@@ -52,8 +56,3 @@ app.listen(PORT, () => {
 app.get('/answerHistory', (req, res) => {
     res.send(answerHistoryArray);
 })
-
-
-//store object to answerHistoryArray
-answerHistoryArray.push(calculationObj);
-res.send(calculationObj);
