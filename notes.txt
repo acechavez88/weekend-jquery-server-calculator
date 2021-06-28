@@ -1,0 +1,75 @@
+need to use npm init in the terminal 
+
+click enter for yes..
+
+in package.json type in the start
+"start":" "node./server/server.js"
+write npm install express body-parser..
+
+commit loads of library files..
+
+so far uploaded 
+[]npm init
+[] npm install express
+[]npm install some stuff 
+[]package.json (npm start)
+[]package-lock.json
+
+make files 
+server folder. 
+    server.js inside. write " 
+    
+    const express = require ('express'); 
+    
+    const app = express(); 
+
+    app.listen(3000,() => {
+        console.log('Listening on http:?localhost:3000');
+    });
+
+make public folder:
+in public folder :
+[]client.js - test with console log to confirm connection
+[]index.html- make h1               
+[]style.css - test with body background-color
+[] jQuery
+
+commit loads of files, (css, html, jQuery, etc.)
+
+what does my data look like?
+each thing is a calculation:
+
+calculation = 
+{
+    firstNumber : 12;
+    secondNumber:  4;
+    operator :"-";
+    solution: 8
+}
+
+POST /calculations{
+    firstNumber: 12,
+    secondNumber: 4,
+    operator: "-"
+}
+
+GET /calculations
+[
+    {
+        firstNumber: 12,
+        secondNumber: 4,
+        operator: "-"
+    },
+    {
+        firstNumber: 12,
+        secondNumber: 4,
+
+    }
+]
+
+
+ajax is a HTTP Request with url
+
+chrome tools in headers with data passed to POST..
+
+HTTP is a convention for network request. 
