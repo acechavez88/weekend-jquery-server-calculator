@@ -32,6 +32,14 @@ app.post('/Math', (req, res) => {
             break;
             }
 
+    //creating an object of input for GET
+    let calculationObj = {
+        number: number,
+        number2: numberTwo,
+        operator: operator, 
+        answer: answer,
+}
+
 });
 
 let answerHistoryArray = [];
@@ -44,13 +52,7 @@ app.listen(PORT, () => {
 app.get('/answerHistory', (req, res) => {
     res.send(answerHistoryArray);
 })
-//creating an object of input for GET
-let calculationObj = {
-    number: number,
-    number2: numberTwo,
-    operator: operator, 
-    answer: answer,
-}
+
 
 //store object to answerHistoryArray
 answerHistoryArray.push(calculationObj);
