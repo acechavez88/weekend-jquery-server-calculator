@@ -21,7 +21,13 @@ function getAnswerHistory() {
   //calls previous calculations..
   $.ajax({
     type: "GET",
-    url: '/answerHistory'
+    url: '/answerHistory',
+    data: {
+      firstNumber: $('#firstInput').val(),
+      secondNumber: $('#secondInput').val(),
+      operator: operator,
+    }
+    
   }) 
   .then(function (response) {
       showHistory(response);
