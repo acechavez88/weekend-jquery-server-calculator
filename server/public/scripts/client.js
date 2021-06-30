@@ -6,6 +6,9 @@ let operator = null;
 function handleReady() {
   console.log("jquery is a GO!")
 
+    //render data on load
+    fetchCalculations();
+
 
 
 // Get value on button click and show alert
@@ -84,8 +87,8 @@ function doMath() {
     type: 'POST',
     url: '/Math',
     data: {
-        valOne: answers.valueOne,
-        valTwo: answers.valueTwo,
+        valOne: answer.valueOne,
+        valTwo: answer.valueTwo,
     },
     dataType: 'json'
   })
