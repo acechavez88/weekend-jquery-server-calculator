@@ -51,6 +51,11 @@ app.post('/Math', (req, res) => {
         res.status (400).send(`Invalid operator: ${req.body.operator}`);
         return;
     }
+    console.log('solution', solution);
+
+    fetchCalculations.push({
+        firstInput: Number(req.body.firstInput)
+    })
   
  
     
