@@ -38,6 +38,12 @@ app.post('/Math', (req, res) => {
     //         }
 
     //changing switch to if else
+    else if (operator === '-') {
+        solution = Number(req.body.firstNumber) - Number(req.body.secondNumber);
+    }
+  
+ 
+    
 
 
     //creating an object of input for GET
