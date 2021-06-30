@@ -54,8 +54,11 @@ app.post('/Math', (req, res) => {
     console.log('solution', solution);
 
     fetchCalculations.push({
-        firstInput: Number(req.body.firstInput)
-    })
+        firstInput: Number(req.body.firstInput),
+        secondInput: Number(req.body.secondNumber),
+        operator: operator,
+        solution: solution
+    });
   
  
     
