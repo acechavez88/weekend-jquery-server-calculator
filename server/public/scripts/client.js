@@ -92,4 +92,7 @@ function fetchCalculations() {
     method: 'GET',
     url: '/calculations'
 })
+    .then(res => {
+      console.log('GET', res);
+    })
 }
