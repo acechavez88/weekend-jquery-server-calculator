@@ -94,7 +94,7 @@ function fetchCalculations() {
 })
     .then(res => {
       console.log('GET', res);
-    })
+    
 
     // render last calculation 
     let lastCalculation = res [res.length -1];
@@ -102,5 +102,12 @@ function fetchCalculations() {
 
     //loop and render 'answer history'
     $('#lastCalculation').empty();
-
+    for(let calc of res) {
+      $('#history').append(`
+          <li>
+              ${calc.firstInput} ${calc.operator} ${calc.secondNumber} = ${calc.solution}
+          <li>
+          `)
+    }
+  })
 }
