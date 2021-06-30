@@ -10,14 +10,16 @@ app.use(express.json());
 //serve up static files(HTML, CSS, Client JS)
 app.use(express.static('server/public'));
 
+// global scope for access
+let bananas = [];
+
 // GET & POST routes go here
 // attempting to create POST route for math equation
-app.post('/Math', (req, res) => {
+app.post('/answerHistory', (req, res) => {
     console.log('body', req.body);
 
     //do math calculation 
     let operator = req.body.operator;
-    let solution;
     if (operator === '+') {
         solution = Number(req.body.firstNumber) + Number(req.body.secondNumber);
     }
@@ -53,19 +55,20 @@ app.post('/Math', (req, res) => {
     }
     console.log('solution', solution);
 
-    fetchCalculations.push({
-        firstInput: Number(req.body.firstInput),
+    bananas.push({
+        firstInput: Number(req.body.firstNumber),
         secondInput: Number(req.body.secondNumber),
         operator: operator,
         solution: solution
     });
-
+    
     res.sendStatus(201);  
  
 });
 
     app.get('/calculations', (req,res) => {
-        res.send(calculations);
+        console.log(bananas);
+        res.send(bananas);
     })
 
     app.listen(5000, () => {
