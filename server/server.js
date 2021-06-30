@@ -22,20 +22,23 @@ app.post('/Math', (req, res) => {
         solution = Number(req.body.firstNumber) + Number(req.body.secondNumber);
     }
     //using switch statement for operators
-    switch(operator) {
-        case '+':
-            result = Number(number) + Number(number2);
-            break;
-        case '-':
-            result = Number(number) - Number(number2);
-            break;
-        case '*':
-            result = Number(number) * Number(number2);
-            break;
-        case '/':
-            result = Number(number) / Number(numberTwo);
-            break;
-            }
+    // switch(operator) {
+    //     case '+':
+    //         result = Number(number) + Number(number2);
+    //         break;
+    //     case '-':
+    //         result = Number(number) - Number(number2);
+    //         break;
+    //     case '*':
+    //         result = Number(number) * Number(number2);
+    //         break;
+    //     case '/':
+    //         result = Number(number) / Number(numberTwo);
+    //         break;
+    //         }
+
+    //changing switch to if else
+
 
     //creating an object of input for GET
     let calculationObj = {
