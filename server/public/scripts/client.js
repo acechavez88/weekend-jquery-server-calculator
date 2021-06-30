@@ -99,4 +99,8 @@ function fetchCalculations() {
     // render last calculation 
     let lastCalculation = res [res.length -1];
     $('#answer').text(lastCalculation.solution);
+
+    //loop and render 'answer history'
+    $('#lastCalculation').empty();
+
 }
