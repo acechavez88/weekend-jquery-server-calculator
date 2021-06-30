@@ -47,6 +47,10 @@ app.post('/Math', (req, res) => {
     else if (operator === '/') {
         solution = Number(req.body.firstNumber) / Number(req.body.secondNumber);
     }
+    else {
+        res.status (400).send(`Invalid operator: ${req.body.operator}`);
+        return;
+    }
   
  
     
