@@ -13,6 +13,8 @@ app.use(express.static('server/public'));
 // GET & POST routes go here
 // attempting to create POST route for math equation
 app.post('/Math', (req, res) => {
+    console.log('body', req.body);
+    
     let firstNumber = req.body.firstNumber;
     let secondNumber = req.body.secondNumber;
     let operator = req.body.operator;
