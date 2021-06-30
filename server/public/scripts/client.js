@@ -95,4 +95,8 @@ function fetchCalculations() {
     .then(res => {
       console.log('GET', res);
     })
+
+    // render last calculation 
+    let lastCalculation = res [res.length -1];
+    $('#answer').text(lastCalculation.solution);
 }
