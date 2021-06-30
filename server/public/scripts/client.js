@@ -25,7 +25,7 @@ function onOperatorSelect() {
 function getAnswerHistory() {
   //calls previous calculations..
   $.ajax({
-    type: "GET",
+    method: "POST",
     url: '/answerHistory',
     data: {
       firstNumber: $('#firstInput').val(),
@@ -42,6 +42,34 @@ function getAnswerHistory() {
   })
   .catch(err => {
       console.log('Sorry something unexpected happened.', err);
+  })
+}
+
+function fetchCalculations() {
+  $.ajax({
+    method: 'GET',
+    url: '/calculations'
+})
+    .then(res => {
+      console.log('GET', res);
+    
+
+    // render last calculation 
+    let lastCalculation = res [res.length -1];
+    $('#answer').text(lastCalculation.solution);
+
+    //loop and render 'answer history'
+    $('#lastCalculation').empty();
+    for(let calc of res) {
+      $('#history').append(`
+          <li>
+              ${calc.firstInput} ${calc.operator} ${calc.secondNumber} = ${calc.solution}
+          <li>
+          `)
+    }
+  })
+  .catch(err => {
+    console.log('GET error', err);
   })
 }
 
@@ -89,33 +117,4 @@ if(firstNumber === '' || secondNumber === '' || operator === '') {
 function clearInputs() {
   $('#firstInput').val('');
   $('#secondInput').val('');
-}
-
-
-function fetchCalculations() {
-  $.ajax({
-    method: 'GET',
-    url: '/calculations'
-})
-    .then(res => {
-      console.log('GET', res);
-    
-
-    // render last calculation 
-    let lastCalculation = res [res.length -1];
-    $('#answer').text(lastCalculation.solution);
-
-    //loop and render 'answer history'
-    $('#lastCalculation').empty();
-    for(let calc of res) {
-      $('#history').append(`
-          <li>
-              ${calc.firstInput} ${calc.operator} ${calc.secondNumber} = ${calc.solution}
-          <li>
-          `)
-    }
-  })
-  .catch(err => {
-    console.log('GET error', err);
-  })
 }
