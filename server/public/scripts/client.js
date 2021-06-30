@@ -97,17 +97,6 @@ function doMath() {
   });
 }
 
-let answers = {};
-function submitAnswer() {
-    let firstNumber = $('#firstInput').val();
-    let secondNumber = $('#secondInput').val();
-    let operator = operator.$(this)
-    let calculationObj = {
-      number: number,
-      number2: numberTwo,
-      operator: operator
-    }
-
 // clearing inputs with C button..
 function clearInputs() {
   $('#firstInput').val('');
