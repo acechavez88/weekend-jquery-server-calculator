@@ -1,7 +1,12 @@
 $(handleReady)
 
+//recall last operator button
+let operator = null;
+
 function handleReady() {
   console.log("jquery is a GO!")
+
+
 
 // Get value on button click and show alert
 $("#submitButton").on('click', doMath);
