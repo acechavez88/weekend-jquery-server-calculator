@@ -14,10 +14,13 @@ app.use(express.static('server/public'));
 // attempting to create POST route for math equation
 app.post('/Math', (req, res) => {
     console.log('body', req.body);
-    
-    let firstNumber = req.body.firstNumber;
-    let secondNumber = req.body.secondNumber;
+
+    //do math calculation 
     let operator = req.body.operator;
+    let solution;
+    if (operator === '+') {
+        solution = Number(req.body.firstNumber) + Number(req.body.secondNumber);
+    }
     //using switch statement for operators
     switch(operator) {
         case '+':
