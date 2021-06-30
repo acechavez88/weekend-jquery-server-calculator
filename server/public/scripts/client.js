@@ -11,9 +11,11 @@ $(".operatorBtn").on('click', onOperatorSelect);
 }
 
 //listener for operator button, function to take operator elements using HTML to get value..
-$('.operatorButton').on('click', function() {
-  operator = $(this).html();
-});
+function onOperatorSelect() {
+  console.log('clicked operator', $(this).text());
+  
+  operator = $(this).text();
+}
 
 function getAnswerHistory() {
   //calls previous calculations..
