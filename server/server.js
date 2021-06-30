@@ -78,18 +78,18 @@ app.post('/Math', (req, res) => {
     // }
 
     //store object to answerHistoryArray
-        answerHistoryArray.push(calculationObj);
-        res.send(calculationObj);
+//         answerHistoryArray.push(calculationObj);
+//         res.send(calculationObj);
 
-});
+// });
 
-let answerHistoryArray = [];
+// let answerHistoryArray = [];
 
-app.listen(PORT, () => {
-    console.log('Server is running on port', PORT);
-});
+// app.listen(PORT, () => {
+//     console.log('Server is running on port', PORT);
+// });
 
-// create variable for previous answers and history
-app.get('/answerHistory', (req, res) => {
-    res.send(answerHistoryArray);
-})
+// // create variable for previous answers and history
+// app.get('/answerHistory', (req, res) => {
+//     res.send(answerHistoryArray);
+// })
