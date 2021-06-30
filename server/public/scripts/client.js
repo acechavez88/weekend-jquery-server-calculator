@@ -12,10 +12,10 @@ function handleReady() {
 
 
 // Get value on button click and show alert
-$("#submitButton").on('click', doMath);
+$("#submitButton").on('click', getAnswerHistory);
 // listener for clear inputs on click c button
 $("#clearButton").on('click', clearInputs);
-$(".operatorBtn").on('click', onOperatorSelect);
+$(".operatorButton").on('click', onOperatorSelect);
 }
 
 //listener for operator button, function to take operator elements using HTML to get value..
@@ -66,7 +66,7 @@ function fetchCalculations() {
     for(let calc of res) {
       $('#answer').append(`
           <li>
-              ${calc.firstInput} ${calc.operator} ${calc.secondNumber} = ${calc.solution}
+              ${calc.firstInput} ${calc.operator} ${calc.secondInput} = ${calc.solution}
           <li>
           `)
     }
