@@ -107,11 +107,6 @@ function submitAnswer() {
       number2: numberTwo,
       operator: operator
     }
-//if any filed is empty alert
-if(firstNumber === '' || secondNumber === '' || operator === '') {
-  alert('please complete fields');
-}
-}
 
 // clearing inputs with C button..
 function clearInputs() {
