@@ -45,13 +45,13 @@ function getAnswerHistory() {
   })
 }
 
-//update answer history section
-function showAnswerHistory(previousCalculations) {
-  $('#lastCalculation').append(previousCalculations[0])
-}
+// //update answer history section
+// function showAnswerHistory(previousCalculations) {
+//   $('#lastCalculation').append(previousCalculations[0])
+// }
 
 //create post route for calculation for two i
-function doMath(valOne, valTwo) {
+function doMath() {
   $.ajax({
     type: 'POST',
     url: '/Math',
