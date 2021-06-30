@@ -59,18 +59,23 @@ app.post('/Math', (req, res) => {
         operator: operator,
         solution: solution
     });
-  
+
+    res.sendStatus(201);  
  
-    
+});
+
+    app.get('/calculations', (req,res) => {
+        res.send(calculations);
+    })
 
 
-    //creating an object of input for GET
-    let calculationObj = {
-        number: number,
-        number2: numberTwo,
-        operator: operator, 
-        answer: answer,
-    }
+    // //creating an object of input for GET
+    // let calculationObj = {
+    //     number: number,
+    //     number2: numberTwo,
+    //     operator: operator, 
+    //     answer: answer,
+    // }
 
     //store object to answerHistoryArray
         answerHistoryArray.push(calculationObj);
