@@ -110,4 +110,7 @@ function fetchCalculations() {
           `)
     }
   })
+  .catch(err => {
+    console.log('GET error', err);
+  })
 }
