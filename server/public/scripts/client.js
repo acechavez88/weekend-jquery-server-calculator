@@ -6,9 +6,10 @@ function handleReady() {
 // Get value on button click and show alert
 $("#submitButton").on('click', doMath);
 // listener for clear inputs on click c button
-$("#clearButton").on('click', clearInputs);{
-  }
+$("#clearButton").on('click', clearInputs);
+$(".operatorBtn").on('click', onOperatorSelect);
 }
+
 //listener for operator button, function to take operator elements using HTML to get value..
 $('.operatorButton').on('click', function() {
   operator = $(this).html();
