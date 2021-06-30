@@ -44,6 +44,9 @@ app.post('/Math', (req, res) => {
     else if (operator === '*') {
         solution = Number(req.body.firstNumber) * Number(req.body.secondNumber);
     }
+    else if (operator === '/') {
+        solution = Number(req.body.firstNumber) / Number(req.body.secondNumber);
+    }
   
  
     
