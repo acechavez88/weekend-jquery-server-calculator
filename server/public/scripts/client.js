@@ -64,7 +64,7 @@ function fetchCalculations() {
     //loop and render 'answer history'
     $('#lastCalculation').empty();
     for(let calc of res) {
-      $('#history').append(`
+      $('#answer').append(`
           <li>
               ${calc.firstInput} ${calc.operator} ${calc.secondNumber} = ${calc.solution}
           <li>
