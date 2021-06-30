@@ -85,3 +85,11 @@ function clearInputs() {
   $('#firstInput').val('');
   $('#secondInput').val('');
 }
+
+
+function fetchCalculations() {
+  $.ajax({
+    method: 'GET',
+    url: '/calculations'
+})
+}
