@@ -29,11 +29,14 @@ function getAnswerHistory() {
     }
     
   }) 
-  .then(function (response) {
-      showHistory(response);
+  .then(res => {
+    console.log('POST res', res);
+
+    fetchCalculations();
+
   })
-  .catch(function (response) {
-      console.log('Sorry something unexpected happened.', response);
+  .catch(err => {
+      console.log('Sorry something unexpected happened.', err);
   })
 }
 
