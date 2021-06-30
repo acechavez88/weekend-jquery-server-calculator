@@ -68,6 +68,9 @@ app.post('/Math', (req, res) => {
         res.send(calculations);
     })
 
+    app.listen(5000, () => {
+        console.log('Listening on http://localhost:5000');
+    });
 
     // //creating an object of input for GET
     // let calculationObj = {
